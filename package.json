@@ -1,0 +1,22 @@
+{
+  "name": "prisma_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "npx prisma migrate reset && node ./seed.js",
+    "start": "node ./server.js",
+    "start:dev": "nodemon ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prisma": "^5.12.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "express": "^4.19.2"
+  }
+}
